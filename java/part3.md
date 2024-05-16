@@ -1,1 +1,5 @@
-
+- parallelStream 과 fork/join framework 는 어떤 관계가 있나요?
+- 어떠한 경우에 parallelStream 또는 fork/join framework 를 사용하는게 좋을까요?
+- 이미지 연산 또는 벡터 작업의 경우에 fork/join framework 를 사용해도 좋을까요? 어떠한 단점이 있을까요?
+- parallelStream 을 사용하여 공유 자원에 접근하는 경우 어떠한 문제가 발생할까요? 이 문제를 해결하려면 어떻게 해야 할까요?
+- 자바가 list 가 런타임에 가변인지 불변인지 어떻게 체크할까요?
