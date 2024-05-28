@@ -3,3 +3,6 @@
 - Azure functions, webhook, logic apps 와 같은 추가 서비스 & endpoints 로 메시지를 보낼 수 있다.
   - Event 별로 과금되는 serverless 제품이다.
 - Event source -> topic -> event grid -> event subscription -> event subscribers
+
+
+https://learn.microsoft.com/en-us/azure/event-grid/overview
