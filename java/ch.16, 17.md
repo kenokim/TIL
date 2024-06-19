@@ -4,4 +4,6 @@
 ## Reactive programming
 - application level 에서는 비동기로 작업을 수행함을 뜻한다.
 
-
+## flow API
+- publisher, subscriber, subscription, processor 를 뜻한다.
+- 
