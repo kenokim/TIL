@@ -1,3 +1,23 @@
+
+## 서버리스 컴퓨팅
+- 클라우드 공급자가 인프라와 스케일을 관리한다.
+  - function as a service, Azure container instance, Azure SF Mesh, AWS Fargate 등이 있다.
+- Azure container apps, ACA 는 k8s 를 기반으로 하지만, 관리형으로 제공되어 사용자가 인프라를 관리할 필요가 없다. 즉, 서버리스 컨테이너 서비스다.
+
+## ACA
+- https://learn.microsoft.com/ko-kr/training/modules/implement-azure-container-apps/
+- AKS 기반의 serverless platform, MSA 와 container 애플리케이션을 배포할 수 있다.
+- event 기반 처리를 수행할 수 있다.
+- dapr 기반 microservices 구축과 API access 관리를 할 수 있다.
+
+## aca 환경
+- k8s namespace 와 대응된다.
+- 연관된 서비스를 묶어서 관리한다.
+- 동일한 가상 네트워크를 사용한다.
+- 동일한 dapr 구성을 공유한다.
+- 동일한 log analytics 영역을 공유한다.
+
+
 ## serverless
 - 서버나 인프라를 직접 관리할 필요 없이, 컨테이너를 배포하고 확장할 수 있습니다. 필요에 따라 자동으로 스케일 인/아웃이 이루어집니다.
 
