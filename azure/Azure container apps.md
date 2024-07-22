@@ -17,6 +17,18 @@
 - 동일한 dapr 구성을 공유한다.
 - 동일한 log analytics 영역을 공유한다.
 
+## aca revisions
+- Revision 이란? immutable snapshot of a container app verison
+- revision-scope changes 가 발생하면 새로운 revision 이 생성된다.
+- active revision: 트래픽이 routing 되는 revision
+- revision names: revision 을 식별하기 위한 값, suffix 를 세팅하여 커스터마이징 할 수 있다.
+  - 기본값은 semi-random string 이다.
+- ARM template / az cli 를 통해 revision suffix 를 세팅할 수 있다.
+  - az containerapp create
+  - az containerapp update
+
+
+
 
 ## serverless
 - 서버나 인프라를 직접 관리할 필요 없이, 컨테이너를 배포하고 확장할 수 있습니다. 필요에 따라 자동으로 스케일 인/아웃이 이루어집니다.
