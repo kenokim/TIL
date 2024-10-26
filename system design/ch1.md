@@ -1,4 +1,7 @@
 # ch1. intro
+### 참고자료
+- https://www.youtube.com/watch?v=_K-eupuDVEc
+
 ### 관계형 DB vs. NoSQL
   - 낮은 latency 요구사항
   - 관계형 데이터가 아님
@@ -27,3 +30,9 @@
 - 데이터 계층은 샤딩으로
 - 각 계층을 독립적 서비스로
 - 시스템을 모니터링하고 자동화 도구를 활용해라
+
+## additional
+### 기술 스택 정리
+- 메시지 큐: kafka, Azure service bus, Azure event hubs
+- 모니터링: prometheus, datadog, Azure monitor
+- 로그: ELK 스택 (elasticsearch, logstash, kibana), elastic APM, loki 스택 (loki, promtail, grafana), Azure monitor (application insights, log analytics)
