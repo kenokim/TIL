@@ -36,3 +36,4 @@
 - 메시지 큐: kafka, Azure service bus, Azure event hubs
 - 모니터링: prometheus, datadog, Azure monitor
 - 로그: ELK 스택 (elasticsearch, logstash, kibana), elastic APM, loki 스택 (loki, promtail, grafana), Azure monitor (application insights, log analytics)
+- 자동화 도구: gitops - argocd
