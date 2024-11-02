@@ -7,3 +7,8 @@
 - https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-get-started?toc=%2Fazure%2Fapp-service%2Ftoc.json
 - https://keda.sh/
 - https://aws.amazon.com/ko/blogs/tech/amazon-aurora-auto-scaling-strategy-for-ktown4u-global-spike-traffic-response/
+
+### db sharding 관련
+- 1. application level, 2. middleware level, 3. infra level 에서 가능
+- 아래는 ProxySQL 을 통해 MySQL 를 샤딩하는 사례
+- https://www.youtube.com/watch?v=8Eb_n7JA1yA
