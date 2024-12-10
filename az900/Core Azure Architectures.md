@@ -24,3 +24,6 @@
 ## resource hierarchy
 - management group -> subscriptions -> rg -> resource
 
+## availability sets (가용성 집합)
+- VM 의 고가용성을 보장하기 위해 구성된다.
+
