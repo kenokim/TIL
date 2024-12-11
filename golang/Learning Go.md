@@ -9,3 +9,7 @@
 - go install github@ : 3rd party go 도구를 설치한다. github 주소를 입력하면 된다.
 - go fmt : go 는 표준 포맷을 강제하며, 이 명령어를 통해 코드를 맞춰준다.
 
+## Ch03. 복합 타입
+### array vs. slice
+- array 는 고정 크기, slice 는 가변 크기
+- 
