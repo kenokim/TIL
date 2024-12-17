@@ -20,3 +20,8 @@
 ### devtest labs
 - ARM template 을 통해 vm 생성/삭제 등 쉽게 관리할 수 있는 서비스이다.
 
+## File storage
+- Hierarchical structure with folders
+- mount to server, use as a drive (D.drive)
+- supports SMB (cross-platform), NFS (linux) protocols
+
