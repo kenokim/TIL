@@ -43,3 +43,8 @@
 - 같은 DNS 을 여러 region 으로 분산한다.
 - 이에 대한 failover, routing 등 기능을 제공한다.
 
+## NSG
+- NSG 는 vnet 에서 network traffic 을 필터링하는 가상 방화벽이다.
+- Subnet 을 대상으로 적용되며, inbound, outbound 트래픽을 port, ip, protocol 등의 조건에 따라 제어한다.
+
+  
