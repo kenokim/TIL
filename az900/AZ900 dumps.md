@@ -25,3 +25,7 @@
 - mount to server, use as a drive (D.drive)
 - supports SMB (cross-platform), NFS (linux) protocols
 
+## Azure workspaces
+- Web based: Azure portal, Azure cloud shell (bash, ps)
+- Local tools: Azure cli
+
