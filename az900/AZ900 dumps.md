@@ -1,4 +1,4 @@
-## Page #7~9
+## 리소스 관리 계층
 - 상속되는 것: RBAC, policy, locks
 - 상속되지 않는 것: tags, 설정, 비용 관리
 - 이 값들은 management group, subscription, resource group, resource 레벨에서 상속된다.
@@ -28,4 +28,14 @@
 ## Azure workspaces
 - Web based: Azure portal, Azure cloud shell (bash, ps)
 - Local tools: Azure cli
+
+## Azure 보안 계층 정리
+
+| **보안 계층**              | **역할**                          | **적용 대상**               |
+|----------------------------|-----------------------------------|------------------------------|
+| **NSG**                   | 포트/프로토콜/IP 필터링           | 서브넷 및 VM NIC            |
+| **Azure DDoS Protection** | DDoS 공격 방어                   | 퍼블릭 IP                  |
+| **Azure Firewall**        | 상태 저장 방화벽, URL 필터링      | 가상 네트워크 경계           |
+| **Application Gateway**   | HTTP/HTTPS 요청 필터링, WAF 기능 | 웹 애플리케이션 트래픽      |
+| **VPN Gateway/ExpressRoute** | 하이브리드 연결 및 암호화      | 온프레미스 ↔ Azure 연결     |
 
