@@ -39,3 +39,7 @@
 | **Application Gateway**   | HTTP/HTTPS 요청 필터링, WAF 기능 | 웹 애플리케이션 트래픽      |
 | **VPN Gateway/ExpressRoute** | 하이브리드 연결 및 암호화      | 온프레미스 ↔ Azure 연결     |
 
+## Traffic manager
+- 같은 DNS 을 여러 region 으로 분산한다.
+- 이에 대한 failover, routing 등 기능을 제공한다.
+
