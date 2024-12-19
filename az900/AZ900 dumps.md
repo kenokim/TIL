@@ -43,6 +43,12 @@
 - 같은 DNS 을 여러 region 으로 분산한다.
 - 이에 대한 failover, routing 등 기능을 제공한다.
 
+### compliance manager
+- Compliance Manager(준수 관리자)**는 Microsoft Purview의 일부로, 보안 및 규정 준수 관리 도구입니다. 기업의 규제 요구 사항 충족 여부를 평가하고 관리하도록 설계된 Azure 및 Microsoft 365 서비스입니다.
+- 이를 통해 데이터 보호, 보안, 개인 정보 보호, 규제 준수 상태를 자동 평가하고, 권장 작업과 감사 보고서 생성 기능을 제공합니다.
+
+
+
 ## NSG
 - NSG 는 vnet 에서 network traffic 을 필터링하는 가상 방화벽이다.
 - Subnet 을 대상으로 적용되며, inbound, outbound 트래픽을 port, ip, protocol 등의 조건에 따라 제어한다.
