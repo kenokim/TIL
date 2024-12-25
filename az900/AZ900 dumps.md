@@ -56,9 +56,18 @@
 | **Standard**      | 약 $100/월    | 24/7 전화/이메일    | 1시간 이내          | 프로덕션 환경         |
 | **ProDirect**     | 약 $1,000/월  | 심층적 지원         | 1시간 이내          | 대기업/중요 서비스     |
 
-
 ## NSG
 - NSG 는 vnet 에서 network traffic 을 필터링하는 가상 방화벽이다.
 - Subnet 을 대상으로 적용되며, inbound, outbound 트래픽을 port, ip, protocol 등의 조건에 따라 제어한다.
 
-  
+### Azure policy
+- 특정 조건에 따라 Azure 리소스를 허용하거나 제한하는 정책을 정의.
+- 리소스 그룹, 구독, 관리 그룹 등에 정책을 할당.
+- 적용 후에 새로 생성되거나 수정되는 경우에만 적용이 된다.
+- Effect 를 설정하여, 정책에 위반될 경우 어떻게 조치할 지 설정할 수 있다.
+
+## Entra ID
+- tenant 가 같은 경우 리소스를 subscription 간에 이동할 수 있다.
+
+### Support request
+- 특수한 경우에 요청을 통해 작업을 할 수 있다.
