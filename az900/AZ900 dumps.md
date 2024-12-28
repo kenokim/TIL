@@ -82,3 +82,6 @@
 - premium ssd, standard ssd, standard hdd 와 같은 디스크 타입들
 - Azure vm 에서 os 디스크, 데이터 디스크로 활용 가능하다.
 - Blob storage 기반으로 복제나 관리가 Azure 에서 처리된다.
+
+### service health
+- Azure 서비스 전반의 가용성에 대해 확인할 수 있다.
