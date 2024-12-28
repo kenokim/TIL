@@ -78,4 +78,7 @@
 - VNet 간 전송: 같은 리전 내는 저렴, 다른 리전 간은 더 높은 비용.
 - VPN Gateway와 ExpressRoute: 고정 요금 + 데이터 전송 요금.
 
-
+## Azure managed disks
+- premium ssd, standard ssd, standard hdd 와 같은 디스크 타입들
+- Azure vm 에서 os 디스크, 데이터 디스크로 활용 가능하다.
+- Blob storage 기반으로 복제나 관리가 Azure 에서 처리된다.
