@@ -102,4 +102,9 @@
 
 - SLA 를 지키지 못하는 경우, account 에 credit 을 지급한다.
 
+### TCO calculator
+- on-premises 와 Azure 에서의 가격을 비교할 때 사용한다.
+
+### Azure arc
+- on-premise, multi-cloud 등 여러 관리를 할 수 있다.
 
