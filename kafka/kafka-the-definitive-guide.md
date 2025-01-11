@@ -18,3 +18,14 @@
 - acks=1: 메시지를 leader partition 이 쓴 후에 응답이 오면 producer 는 성공 처리한다.
 - acks=all: min.insync.replicas 가 메시지를 받아가면 producer 는 성공 처리한다.
 
+### 커밋된 메시지 vs. 커밋된 offset
+- 메시지는 producer 가 커밋한다.
+- offset 은 consumer 가 커밋한다.
+
+### __consumer_offsets 토픽
+- Consumer Group, Topic, Partition 를 key 로, offset 을 value 로 갖는다.
+- conumser group 이 message 를 어디까지 가져갔는지에 대한 정보다.
+- 이 값이 없으면, auto.offset.reset 에 따라 earliest 또는 latest 로 처리한다.
+
+## consumer offset commit
+- 
