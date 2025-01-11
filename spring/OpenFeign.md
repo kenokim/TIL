@@ -47,3 +47,32 @@ public class CustomErrorDecoder implements ErrorDecoder {
     }
 }
 ```
+
+## resilience4j
+- circuitbreaker 기능을 제공한다.
+- application.properties 에서 설정 가능하다. 예를 들어, 3초 이상 걸리는 경우 캐싱된 값을 리턴한다.
+
+```kotlin
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker
+import org.springframework.stereotype.Service
+import java.time.Instant
+
+@Service
+class ExampleService(private val exampleClient: ExampleClient) {
+
+    private val cachedPost = Post(0, "Cached Title", "Cached Content", Instant.now().toString())
+
+    @CircuitBreaker(name = "exampleService", fallbackMethod = "fallbackGetPostById")
+    fun getPostById(id: Long): Post {
+        // API 호출 (3초 이상 지연될 경우 fallback 실행)
+        return exampleClient.getPostById(id)
+    }
+
+    // Fallback 메서드
+    fun fallbackGetPostById(id: Long, throwable: Throwable): Post {
+        println("Fallback triggered due to: ${throwable.message}")
+        return cachedPost.copy(id = id, timestamp = Instant.now().toString())
+    }
+}
+
+```
