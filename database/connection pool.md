@@ -6,7 +6,26 @@
 - 커넥션이란?
   - TCP/IP 커넥션을 의미한다.
   - 커넥션 풀은 TCP 3-way handshake 를 미리 해 놓아 응답 지연을 줄이고자 한다.
-  - 또한, 커넥션 수를 관리함으로써 리소스 사용을 제한할 수 있따.
+  - 또한, 커넥션 수를 관리함으로써 리소스 사용을 제한할 수 있다.
+
+## HikariCP 옵션
+
+| **옵션** | **설명** | **기본값** |
+|---------|--------|-----------|
+| `maximumPoolSize` | 최대 Connection 개수 | **10** |
+| `minimumIdle` | 유지할 최소 Connection 개수 | **same as `maximumPoolSize`** |
+| `idleTimeout` | Idle 상태의 Connection을 제거하는 시간 (밀리초) | **600000 (10분)** |
+| `maxLifetime` | Connection이 사용 가능한 최대 시간 (밀리초) | **1800000 (30분)** |
+| `connectionTimeout` | Connection을 얻기 위한 최대 대기 시간 (밀리초) | **30000 (30초)** |
+| `leakDetectionThreshold` | Connection이 반환되지 않으면 로그 출력 (밀리초) | **0 (비활성화)** |
+| `autoCommit` | Connection 사용 후 자동 커밋 여부 | **true** |
+| `validationTimeout` | Connection의 유효성을 검사하는 최대 시간 (밀리초) | **5000 (5초)** |
+| `keepaliveTime` | Connection이 비활성 상태일 때 ping을 보내는 시간 (밀리초) | **0 (비활성화)** |
+| `poolName` | Connection Pool의 이름 | **HikariPool-1** |
+| `allowPoolSuspension` | Pool의 동작을 일시 중지할 수 있는지 여부 | **false** |
+| `isReadOnly` | Connection을 Read-Only로 설정할지 여부 | **false** |
+| `registerMbeans` | JMX로 HikariCP 상태를 모니터링할 수 있는지 여부 | **false** |
+
  
 - TCP 연결에는 어떤 물리적인 리소스가 사용되는가?
 - TCP 연결은 여러 가지 리소스를 사용합니다. 주요한 것들은 다음과 같습니다:
