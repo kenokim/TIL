@@ -20,4 +20,5 @@
 ### Java 의 TimeZone 클래스
 <img width="428" alt="스크린샷 2025-02-20 오후 11 49 10" src="https://github.com/user-attachments/assets/73cd7bba-9a14-4032-8a77-20fec1a56808" />
 <img width="645" alt="스크린샷 2025-02-20 오후 11 52 48" src="https://github.com/user-attachments/assets/b66011bd-52c8-49d8-bd88-a5bee95e5eba" />
+
 - TimeZone.getDefault() 를 호출할 경우, defaultTimeZone 이 있을 경우 (setDefault 를 통해 세팅된 경우 등) 그 값을 리턴하고, 없을 경우 System 의 user.timezone (JVM 실행 플래그) 에서 읽어온다.
