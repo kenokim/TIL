@@ -1,4 +1,5 @@
 ## create-react-app
+```
 my-react-app/
 ├── node_modules/         # 설치된 npm 패키지들
 ├── public/               # 정적 파일 (HTML, Favicon 등)
@@ -23,4 +24,4 @@ my-react-app/
 ├── package-lock.json     # 종속성 버전 잠금 파일
 ├── README.md             # 프로젝트 설명 문서
 └── webpack.config.js     # 웹팩 설정 파일 (사용하는 경우)
-
+```
